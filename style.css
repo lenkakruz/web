@@ -29,6 +29,7 @@ nav ul {
 .header {
   height: 110vh;
   background-image: url(img/bg.jpeg);
+  background-position: 0;
   /* flex-box */
   display: flex;
   flex-direction: column;
@@ -38,9 +39,20 @@ nav ul {
   margin-bottom: 30px;
   margin-top: -10vh;
 }
-
+.header a {
+  position: absolute;
+  top: 85vh;
+  left: 5vw;
+  padding: 20px;
+  font-size: 1em;
+  color: whitesmoke;
+  text-decoration: none;
+}
 .section-shop {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .products_wheel {
@@ -56,13 +68,9 @@ nav ul {
 .products_wheel::-webkit-scrollbar {
   height: 5px;
   background-color: rgba(121, 121, 121, 0.4);
-  width: 20vw;
 }
 .products_wheel::-webkit-scrollbar-thumb {
   background-color: rgba(72, 72, 72, 0.4);
-}
-.products_wheel::-webkit-scrollbar-track {
-  padding-top: 50px;
 }
 
 .products_wheel_item {
@@ -77,4 +85,16 @@ nav ul {
 }
 .products_wheel_item p {
   margin-bottom: 15px;
+}
+
+.section-shop-mug {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.section-shop-vase {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
 }
