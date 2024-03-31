@@ -98,3 +98,23 @@ nav ul {
   align-items: flex-end;
   flex-direction: row;
 }
+
+.section-about {
+  display: flex;
+}
+
+.section-about-heading {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-about img {
+  flex: 1;
+}
+
+.section-about-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
