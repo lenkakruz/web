@@ -5,9 +5,6 @@
   margin: 0;
 }
 
-nav {
-  /* position: absolute; */
-}
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -117,4 +114,13 @@ nav ul {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  list-style: none;
 }
