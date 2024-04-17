@@ -115,7 +115,20 @@ nav ul {
   flex-direction: column;
   flex: 1;
 }
-
+/*   newsletter   */
+.section-newsletter {
+  display: flex;
+  flex-direction: row;
+}
+.section-newsletter img {
+  width: 50px;
+}
+.section-newsletter input[type="email"] {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+/*footer*/
 footer {
   display: flex;
   justify-content: space-evenly;

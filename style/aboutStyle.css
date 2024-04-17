@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #f7f2ef;
+  width: 90vw;
+  margin: 0 auto;
+}
+nav {
+  background-color: #f7f2ef;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+
+.navbar li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* --header-- */
+header {
+  height: 110vh;
+  background-position: 0;
+
+  /* flex-box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 1.5em;
+  margin-top: -10vh;
+}
+
+.header-text {
+  position: absolute;
+  top: 20vh;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+header img {
+  height: 50vh;
+  width: 90vw;
+  object-fit: cover;
+  bottom: 10vh;
+  position: absolute;
+}
+header a {
+  position: absolute;
+  top: 85vh;
+  left: 5vw;
+  padding: 20px;
+  font-size: 1em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+main {
+  display: flex;
+}
+.aboutus-text {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 2em;
+}
+/* --zoznam umelcov-- */
+.section-featured-artists {
+  height: 100vh;
+  font-size: 1.3em;
+  line-height: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --sekcia s použiteľnosťou-- */
+.section-use {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-use img {
+  object-fit: cover;
+  height: 33vh;
+  width: 90vw;
+  margin: 0.5em;
+}
+
+/* --footer-- */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  list-style: none;
+  margin: 5rem;
+}
