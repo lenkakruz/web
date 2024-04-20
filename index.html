@@ -9,7 +9,11 @@
   </head>
   <body>
     <nav>
-      <ul class="navbar">
+      <!-- <label for="toggle"
+        >&#9776;
+        <input type="checkbox" id="toggle" />
+      </label> -->
+      <ul>
         <a href="index.html"><li class="nav-logo">Clay</li></a>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="about.html">About</a></li>
@@ -19,14 +23,14 @@
         </li>
       </ul>
     </nav>
-    <div class="header">
+    <header>
       <h1>Clay shop</h1>
       <p>Lorem ipsum dolor sit amet</p>
       <a href="shop.html">Shop all collection →</a>
-    </div>
+    </header>
 
-    <div class="section-shop">
-      <h3>Shop Now!</h3>
+    <main class="shop">
+      <h2>Shop Now!</h2>
       <div class="products_wheel">
         <div class="products_wheel_item">
           <img src="img/mug.avif" alt="mug" />
@@ -59,9 +63,9 @@
           <p>$99.99</p>
         </div>
       </div>
-    </div>
+    </main>
 
-    <div class="section-shop-mug">
+    <section class="shop-mug">
       <div class="mug-img">
         <img src="img/mug1.avif" alt="mug" />
       </div>
@@ -74,9 +78,9 @@
         </p>
         <a href="#">Shop all mugs →</a>
       </div>
-    </div>
+    </section>
 
-    <div class="section-shop-vase">
+    <section class="shop-vase">
       <div class="vase-text">
         <h3>Vases</h3>
         <p>
@@ -89,15 +93,15 @@
       <div class="vase-img">
         <img src="img/vase.avif" alt="vase" />
       </div>
-    </div>
+    </section>
 
-    <div class="section-about">
-      <div class="section-about-heading">
-        <p>About Us</p>
-        <h2>Clay Ceramics</h2>
+    <p>About Us</p>
+    <section class="about">
+      <div class="about-heading">
+        <p>Clay Ceramics</p>
       </div>
-      <img src="img/mug1.jpg" alt="mug" />
-      <div class="section-about-text">
+      <img src="img/kolo.avif" alt="clay wheel" />
+      <div class="about-text">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
           Voluptate, similique eaque laudantium necessitatibus quibusdam obcaecati, autem amet nam asperiores perferendis non
@@ -105,15 +109,17 @@
           <a href="#">Read our story →</a>
         </p>
       </div>
-    </div>
-    <h2>subscribe to our newsletter</h2>
-    <div class="section-newsletter">
-      <img src="img/mail.jpg" alt="mailIcon" />
-      <form action="/submitNewsletter" method="post">
-        <input type="email" placeholder="Enter your email adress" name="mail" required />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+    </section>
+    <section class="newsletter">
+      <h2>subscribe to our newsletter</h2>
+      <div class="newsletter-text">
+        <img src="img/mail.jpg" alt="mailIcon" />
+        <form action="/submitNewsletter" method="post">
+          <input type="email" placeholder="Enter your email adress" name="mail" required />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
     <footer>
       <ul>
         <li>Visit our store</li>
