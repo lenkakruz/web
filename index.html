@@ -5,22 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="clay, pottery, shop, mug, vase, ceramics" />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Clay Ceramics</title>
   </head>
   <body>
     <nav>
-      <!-- <label for="toggle"
-        >&#9776;
+      <ul class="nav-bar">
+        <a href="index.html"><li class="logo">Clay</li></a>
         <input type="checkbox" id="toggle" />
-      </label> -->
-      <ul>
-        <a href="index.html"><li class="nav-logo">Clay</li></a>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-carrito" alt="shopping-cart" /></a>
-        </li>
+        <span class="menu">
+          <!-- <a href="index.html"><li class="nav-logo">Home</li></a> -->
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <label for="toggle" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="toggle" class="open-menu"><i class="fas fa-bars"></i></label>
+        <label for="img-cart" class="shopping-bag">
+          <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-cart" alt="shopping-cart" /></a
+        ></label>
       </ul>
     </nav>
     <header>
@@ -85,8 +94,7 @@
         <h3>Vases</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam consequatur impedit ab cupiditate molestias neque
-          similique dolor quidem. Corrupti, consequatur deserunt recusandae ab error blanditiis quisquam ducimus voluptates ad
-          iste.
+          similique dolor quidem. Corrupti, consequatur ab error blanditiis quisquam ducimus voluptates ad iste.
         </p>
         <a href="#">Shop all vases →</a>
       </div>
@@ -95,23 +103,24 @@
       </div>
     </section>
 
-    <p>About Us</p>
     <section class="about">
+      <p class="center-about">About Us</p>
       <div class="about-heading">
         <p>Clay Ceramics</p>
+        <img src="img/kolo.avif" alt="clay wheel" />
       </div>
-      <img src="img/kolo.avif" alt="clay wheel" />
       <div class="about-text">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
           Voluptate, similique eaque laudantium necessitatibus quibusdam obcaecati, autem amet nam asperiores perferendis non
-          deleniti ex dolores. Fuga necessitatibus placeat quae quaerat laborum
+          deleniti ex dolores. Fuga necessitatibus placeat
+          <br />
           <a href="#">Read our story →</a>
         </p>
       </div>
     </section>
     <section class="newsletter">
-      <h2>subscribe to our newsletter</h2>
+      <h4>subscribe to our newsletter</h4>
       <div class="newsletter-text">
         <img src="img/mail.jpg" alt="mailIcon" />
         <form action="/submitNewsletter" method="post">
@@ -141,6 +150,7 @@
         <li>Social</li>
         <li>Facebook</li>
         <li>Instagram</li>
+        <li><span>&copy;2024 Clay Ceramics</span></li>
       </ul>
     </footer>
   </body>
