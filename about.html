@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/aboutStyle.css" />
+    <meta name="keywords" content="clay, pottery, shop, mug, vase, ceramics" />
+
     <title>Clay About</title>
   </head>
   <body>
     <div class="wrap">
       <nav>
-        <ul class="navbar">
-          <a href="index.html"><li class="nav-logo">logo</li></a>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-carrito" /></a>
-          </li>
+        <ul class="nav-bar">
+          <a href="index.html"><li class="logo">Clay</li></a>
+          <input type="checkbox" id="toggle" />
+          <span class="menu">
+            <!-- <a href="index.html"><li class="nav-logo">Home</li></a> -->
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <label for="toggle" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="toggle" class="open-menu"><i class="fas fa-bars"></i></label>
+          <label for="img-cart" class="shopping-bag">
+            <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-cart" alt="shopping-cart" /></a
+          ></label>
         </ul>
       </nav>
       <header>

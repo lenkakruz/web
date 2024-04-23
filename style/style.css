@@ -8,6 +8,7 @@
 :root {
   --bg-color: #f7f2ef;
   --font-heading: "NewYork", serif;
+  --font-size-heading: 2.2em;
   --color1: #312e2e;
   --color2: #f7f2ef;
   --wrap: 90vw;
@@ -92,14 +93,13 @@ body {
   right: 60px;
 }
 
-/* --header-- */
+/* --header-------------- */
 header {
   height: 110vh;
   background-image: url(../img/bg.jpeg);
   background-position: 0;
   font-family: var(--font-heading);
 
-  /* flex-box */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,6 +107,10 @@ header {
   background-size: cover;
   margin-bottom: 30px;
   margin-top: -10vh;
+}
+header h1 {
+  font-size: 3em;
+  /* color: white; */
 }
 header a {
   position: absolute;
@@ -117,6 +121,7 @@ header a {
   color: whitesmoke;
   text-decoration: none;
 }
+
 /* --main shop wheel-- */
 .shop {
   height: 100vh;
@@ -205,6 +210,7 @@ header a {
   bottom: -20px;
   position: relative;
 }
+
 /* --section : about-- */
 .center-about {
   display: flex;
@@ -213,32 +219,27 @@ header a {
   flex-direction: column;
 }
 .about {
-  /* background-color: white; */
-
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
-
 .about-heading {
   font-size: 3em;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
 }
-.about-heading p {
-  /* text-align: center; */
-}
-
 .about img {
   width: 100%;
 }
-
 .about-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90vw;
+  margin: 0 auto;
 }
+
 /*   --newsletter--   */
 .newsletter {
   height: 50vh;
@@ -248,9 +249,10 @@ header a {
   align-items: center;
 }
 
-.newsletter h2 {
+.newsletter h4 {
   margin: 20px;
   text-transform: uppercase;
+  font-family: NewYork;
 }
 .newsletter-text {
   display: flex;
@@ -267,8 +269,7 @@ header a {
 .newsletter input[type="email"] {
   height: 40px;
   border: none;
-  margin-left: 50px;
-  margin-right: 50px;
+
   background-color: var(--bg-color);
 }
 .newsletter input[type="submit"] {
@@ -282,7 +283,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 5em;
+  margin-top: 20px;
 }
 
 footer ul {
@@ -328,6 +329,18 @@ footer ul {
   footer {
     flex-direction: row;
   }
+
+  .newsletter input[type="email"] {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .about {
+    flex-direction: row;
+    align-items: center;
+  }
+  .newsletter h4 {
+    font-size: var(--font-size-heading);
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -339,6 +352,16 @@ footer ul {
     object-fit: cover;
 
     width: 150%;
+  }
+  .shop-mug,
+  .shop-vase {
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+  }
+  .vase-text,
+  .mug-text,
+  .about-text {
+    margin: 50px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */

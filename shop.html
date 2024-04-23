@@ -3,59 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="clay, pottery, shop, mug, vase, ceramics" />
+
     <title>Clay Shop</title>
+    <link rel="stylesheet" href="style/shopStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <nav>
-      <ul class="navbar">
-        <a href="index.html"><li class="nav-logo">logo</li></a>
-        <li><a href="#products">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-carrito" alt="shopping-cart" /></a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header">
-      <img src="img/mug1.jpg" alt="Mug" />
-      <div class="header-text-main">
-        <h1>Proucts</h1>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-      <a href=""><p>Explore our story and creators</p></a>
-    </div>
-    <div class="section-products">
-      <div class="section-products-item">
-        <img src="img/vase.avif" alt="Vase" />
-        <p>Product Name</p>
-        <p>Price €</p>
-      </div>
-      <div class="section-products-item">
-        <img src="img/vase1.avif" alt="Vase" />
-        <p>Product Name</p>
-        <p>Price €</p>
-      </div>
-      <div class="section-products-item">
-        <img src="img/vase.avif" alt="Vase" />
-        <p>Product Name</p>
-        <p>Price €</p>
-      </div>
-      <div class="section-products-item">
-        <img src="img/bowl.avif" alt="Vase" />
-        <p>Product Name</p>
-        <p>Price €</p>
-        <div class="section-products-item">
+    <div class="wrap">
+      <nav>
+        <ul class="nav-bar">
+          <a href="index.html"><li class="logo">Clay</li></a>
+          <input type="checkbox" id="toggle" />
+          <span class="menu">
+            <!-- <a href="index.html"><li class="nav-logo">Home</li></a> -->
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <label for="toggle" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="toggle" class="open-menu"><i class="fas fa-bars"></i></label>
+          <label for="img-cart" class="shopping-bag">
+            <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-cart" alt="shopping-cart" /></a
+          ></label>
+        </ul>
+      </nav>
+      <header>
+        <h1>Catalog</h1>
+        <hr />
+      </header>
+      <section class="filter">
+        <ul>
+          <li>All</li>
+          <li>Vases</li>
+          <li>Mugs</li>
+          <li>Bowls</li>
+        </ul>
+      </section>
+      <main class="products">
+        <div class="products-item">
+          <img src="img/bowl1.avif" alt="Vase" />
+          <p>Product Name</p>
+          <p>Price €</p>
+        </div>
+        <div class="products-item">
+          <img src="img/vase1.avif" alt="Vase" />
+          <p>Product Name</p>
+          <p>Price €</p>
+        </div>
+        <div class="products-item">
+          <img src="img/vase.avif" alt="Vase" />
+          <p>Product Name</p>
+          <p>Price €</p>
+        </div>
+        <div class="products-item">
+          <img src="img/bowl.avif" alt="Vase" />
+          <p>Product Name</p>
+          <p>Price €</p>
+        </div>
+        <div class="products-item">
           <img src="img/mug2.avif" alt="Vase" />
           <p>Product Name</p>
           <p>Price €</p>
-          <div class="section-products-item">
-            <img src="img/mug3.avif" alt="Vase" />
-            <p>Product Name</p>
-            <p>Price €</p>
-          </div>
         </div>
-      </div>
+        <div class="products-item">
+          <img src="img/mug3.avif" alt="Vase" />
+          <p>Product Name</p>
+          <p>Price €</p>
+        </div>
+      </main>
     </div>
   </body>
 </html>
