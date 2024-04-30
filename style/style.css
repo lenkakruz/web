@@ -110,7 +110,6 @@ header {
 }
 header h1 {
   font-size: 3em;
-  /* color: white; */
 }
 header a {
   position: absolute;
@@ -118,7 +117,7 @@ header a {
   left: 5vw;
   padding: 20px;
   font-size: 1em;
-  color: whitesmoke;
+  color: var(--color2);
   text-decoration: none;
 }
 
@@ -168,9 +167,6 @@ header a {
   align-items: flex-end;
   flex-direction: column;
 }
-.mug-img img {
-  /* height: 100vh; */
-}
 .mug-text {
   /* width: 30%; */
   margin: 0 auto;
@@ -192,9 +188,6 @@ header a {
   align-items: flex-end;
   flex-direction: column-reverse;
   margin-bottom: 50px;
-}
-.vase-img img {
-  /* height: 100vh; */
 }
 .vase-text {
   /* width: 30%; */
@@ -258,7 +251,7 @@ header a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color1);
   width: fit-content;
 }
 .newsletter img {
