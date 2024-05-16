@@ -14,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="script/script.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -40,39 +41,39 @@
       </header>
       <section class="filter">
         <ul>
-          <li>All</li>
-          <li>Vases</li>
-          <li>Mugs</li>
-          <li>Bowls</li>
+          <li onclick="applyFilter('all')">All</li>
+          <li onclick="applyFilter('vase')">Vases</li>
+          <li onclick="applyFilter('mug')">Mugs</li>
+          <li onclick="applyFilter('bowl')">Bowls</li>
         </ul>
       </section>
       <main class="products">
-        <div class="products-item">
+        <div class="products-item" data-type="bowl">
           <img src="img/bowl1.avif" alt="Vase" />
           <p>Product Name</p>
           <p>Price €</p>
         </div>
-        <div class="products-item">
+        <div class="products-item" data-type="vase">
           <img src="img/vase1.avif" alt="Vase" />
           <p>Product Name</p>
           <p>Price €</p>
         </div>
-        <div class="products-item">
+        <div class="products-item" data-type="vase">
           <img src="img/vase.avif" alt="Vase" />
           <p>Product Name</p>
           <p>Price €</p>
         </div>
-        <div class="products-item">
+        <div class="products-item" data-type="bowl">
           <img src="img/bowl.avif" alt="Vase" />
           <p>Product Name</p>
           <p>Price €</p>
         </div>
-        <div class="products-item">
+        <div class="products-item" data-type="mug">
           <img src="img/mug2.avif" alt="Vase" />
           <p>Product Name</p>
           <p>Price €</p>
         </div>
-        <div class="products-item">
+        <div class="products-item" data-type="bowl">
           <img src="img/mug3.avif" alt="Vase" />
           <p>Product Name</p>
           <p>Price €</p>
