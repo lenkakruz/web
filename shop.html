@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="clay, pottery, shop, mug, vase, ceramics" />
-
+    <link rel="icon" href="/img/ikon.jpg" />
     <title>Clay Shop</title>
     <link rel="stylesheet" href="style/shopStyle.css" />
     <link
@@ -14,7 +14,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="script/script.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -30,9 +29,10 @@
             <label for="toggle" class="close-menu"><i class="fas fa-times"></i></label>
           </span>
           <label for="toggle" class="open-menu"><i class="fas fa-bars"></i></label>
-          <label for="img-cart" class="shopping-bag">
-            <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-cart" alt="shopping-cart" /></a
-          ></label>
+          <label for="img-cart" class="shopping-bag" onclick="showModalFunction()">
+            <img src="https://super.so/icon/dark/shopping-cart.svg" class="cart-btn" id="img-cart" alt="shopping-cart" />
+            <div class="cart-items-counter">0</div>
+          </label>
         </ul>
       </nav>
       <header>
@@ -48,37 +48,65 @@
         </ul>
       </section>
       <main class="products">
+        <!-- <div class="shop-item products-item" data-type="bowl">
+          <img class="shop-item-image" src="img/bowl1.avif" alt="Bowl" />
+          <div class="shop-item-details">
+            <span class="shop-item-title">Bowl</span>
+            <span class="shop-item-price">9.99€</span>
+          </div>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+         </div> -->
         <div class="products-item" data-type="bowl">
-          <img src="img/bowl1.avif" alt="Vase" />
-          <p>Product Name</p>
-          <p>Price €</p>
+          <img src="img/bowl1.avif" alt="Vase" class="shop-item-image" />
+          <p class="shop-item-title">Textured Bowl</p>
+          <p class="shop-item-price">12.99 €</p>
+          <button class="shop-item-button">Add to Cart</button>
         </div>
         <div class="products-item" data-type="vase">
-          <img src="img/vase1.avif" alt="Vase" />
-          <p>Product Name</p>
-          <p>Price €</p>
+          <img src="img/vase1.avif" alt="Vase" class="shop-item-image" />
+          <p class="shop-item-title">Tall Vase</p>
+          <p class="shop-item-price">13.99 €</p>
+          <button class="shop-item-button">Add to Cart</button>
         </div>
         <div class="products-item" data-type="vase">
-          <img src="img/vase.avif" alt="Vase" />
-          <p>Product Name</p>
-          <p>Price €</p>
+          <img src="img/vase.avif" alt="Vase" class="shop-item-image" />
+          <p class="shop-item-title">Vase Kit</p>
+          <p class="shop-item-price">12.99 €</p>
+          <button class="shop-item-button">Add to Cart</button>
         </div>
         <div class="products-item" data-type="bowl">
-          <img src="img/bowl.avif" alt="Vase" />
-          <p>Product Name</p>
-          <p>Price €</p>
+          <img src="img/bowl.avif" alt="Vase" class="shop-item-image" />
+          <p class="shop-item-title">Bowl Burned</p>
+          <p class="shop-item-price">8.99 €</p>
+          <button class="shop-item-button">Add to Cart</button>
         </div>
         <div class="products-item" data-type="mug">
-          <img src="img/mug2.avif" alt="Vase" />
-          <p>Product Name</p>
-          <p>Price €</p>
+          <img src="img/mug2.avif" alt="Vase" class="shop-item-image" />
+          <p class="shop-item-title">Cup With Lid</p>
+          <p class="shop-item-price">9.99 €</p>
+          <button class="shop-item-button">Add to Cart</button>
         </div>
         <div class="products-item" data-type="bowl">
-          <img src="img/mug3.avif" alt="Vase" />
-          <p>Product Name</p>
-          <p>Price €</p>
+          <img src="img/mug3.avif" alt="Vase" class="shop-item-image" />
+          <p class="shop-item-title">Bowl Tall</p>
+          <p class="shop-item-price">10.99 €</p>
+          <button class="shop-item-button">Add to Cart</button>
         </div>
       </main>
+      <!-- Cart section -->
+      <section class="cart-center">
+        <div class="backdrop" onclick="closeModalFunction()"></div>
+        <div class="cart">
+          <h3 class="cart-title">Your Cart</h3>
+          <!-- Cart item -->
+
+          <div class="cart-footer">
+            <span class="cart-total">Total price: 0 €</span>
+            <button class="cart-item-confirm" onclick="confirmPurchase()">confirm</button>
+          </div>
+        </div>
+      </section>
     </div>
+    <script src="script/script.js" defer></script>
   </body>
 </html>
