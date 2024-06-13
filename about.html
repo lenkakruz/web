@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/aboutStyle.css" />
     <meta name="keywords" content="clay, pottery, shop, mug, vase, ceramics" />
+    <link rel="icon" href="/img/ikon.jpg" />
+
+    <link rel="stylesheet" href="style/aboutStyle.css" />
+    <link rel="stylesheet" href="style/main.css" />
 
     <title>Clay About</title>
   </head>
@@ -22,17 +25,18 @@
             <label for="toggle" class="close-menu"><i class="fas fa-times"></i></label>
           </span>
           <label for="toggle" class="open-menu"><i class="fas fa-bars"></i></label>
-          <label for="img-cart" class="shopping-bag">
-            <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-cart" alt="shopping-cart" /></a
-          ></label>
+          <label for="img-cart" class="shopping-bag" onclick="showModalFunction()">
+            <img src="https://super.so/icon/dark/shopping-cart.svg" class="cart-btn" id="img-cart" alt="shopping-cart" />
+            <div class="cart-items-counter">0</div>
+          </label>
         </ul>
       </nav>
       <header>
         <div class="header-text">
-          <h1>Clay Story:About Us</h1>
-          <p>Made in the heart of idk.</p>
+          <h1>Clay Story: About Us</h1>
+          <p>Made in the heart of Europe.</p>
         </div>
-        <img src="img/about-header.avif" alt="" />
+        <img src="img/about-header.avif" alt="pottery wheel" />
         <a href=""><p>Explore our story and creators</p></a>
       </header>
 
@@ -52,15 +56,15 @@
           necessitatibus delectus velit porro magni hic obcaecati modi recusandae. Mollitia dolor odit, aperiam repellat
           consectetur autem recusandae?
         </div>
-        <img src="img/mug.avif" alt="" />
+        <img src="img/mug.avif" alt="mug" />
       </main>
       <section class="featured-artists">
         <h3>Featured Artists</h3>
-        <p>Name Secondname / England</p>
-        <p>Name Secondname / Australia</p>
-        <p>Name Secondname / Germany</p>
-        <p>Name Secondname / Denmark</p>
-        <p>Name Secondname / Canada</p>
+        <p>Eleanor Whitman / England</p>
+        <p>Liam Foster / Australia</p>
+        <p>Felix Müller / Germany</p>
+        <p>Freja Larsen / Denmark</p>
+        <p>Olivia Sinclair / Canada</p>
       </section>
       <div class="section-use">
         <img src="img/kolo.avif" alt="clay wheel" />
