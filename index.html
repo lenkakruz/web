@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="clay, pottery, shop, mug, vase, ceramics" />
+    <link rel="icon" href="/img/ikon.jpg" />
+
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link
@@ -16,7 +18,7 @@
     <title>Clay Ceramics</title>
   </head>
   <body>
-    <nav>
+    <nav class="wrap">
       <ul class="nav-bar">
         <a href="index.html"><li class="logo">Clay</li></a>
         <input type="checkbox" id="toggle" />
@@ -28,11 +30,13 @@
           <label for="toggle" class="close-menu"><i class="fas fa-times"></i></label>
         </span>
         <label for="toggle" class="open-menu"><i class="fas fa-bars"></i></label>
-        <label for="img-cart" class="shopping-bag">
-          <a href=""><img src="https://super.so/icon/dark/shopping-cart.svg" id="img-cart" alt="shopping-cart" /></a
-        ></label>
+        <label for="img-cart" class="shopping-bag" onclick="showModalFunction()">
+          <img src="https://super.so/icon/dark/shopping-cart.svg" class="cart-btn" id="img-cart" alt="shopping-cart" />
+          <div class="cart-items-counter">0</div>
+        </label>
       </ul>
     </nav>
+
     <header>
       <h1>Clay shop</h1>
       <p>Lorem ipsum dolor sit amet</p>
@@ -40,37 +44,37 @@
     </header>
 
     <main class="shop">
-      <h2>Shop Now!</h2>
+      <a href="shop.html"> <h2>Shop Now!</h2></a>
       <div class="products_wheel">
         <div class="products_wheel_item">
           <img src="img/mug.avif" alt="mug" />
-          <p>Product Name</p>
-          <p>$99.99</p>
+          <p>Cup Corners</p>
+          <p>9.99 €</p>
         </div>
         <div class="products_wheel_item">
           <img src="img/mug1.avif" alt="mug" />
-          <p>Product Name</p>
-          <p>$99.99</p>
+          <p>Cup</p>
+          <p>8.99 €</p>
         </div>
         <div class="products_wheel_item">
           <img src="img/mug2.avif" alt="mug" />
-          <p>Product Name</p>
-          <p>$99.99</p>
+          <p>Lid Cup</p>
+          <p>10.99 €</p>
         </div>
         <div class="products_wheel_item">
           <img src="img/bowl.avif" alt="bowl" />
-          <p>Product Name</p>
-          <p>$99.99</p>
+          <p>Bowl Corners</p>
+          <p>11.99 €</p>
         </div>
         <div class="products_wheel_item">
           <img src="img/vase.avif" alt="vase" />
-          <p>Product Name</p>
-          <p>$99.99</p>
+          <p>Vase</p>
+          <p>12.99 €</p>
         </div>
         <div class="products_wheel_item">
           <img src="img/vase1.avif" alt="vase" />
-          <p>Product Name</p>
-          <p>$99.99</p>
+          <p>Vase Tall</p>
+          <p>13.99 €</p>
         </div>
       </div>
     </main>
