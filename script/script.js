@@ -62,7 +62,6 @@ function addItemToCart(title, price, imageSrc) {
     }
   }
   const cartRowContents = `
-          <div class="item-row">
             <img class="cart-item-img" src="${imageSrc}" />
             <div class="cart-item-desc">
               <p class="cart-item-title">${title}</p>
@@ -74,7 +73,6 @@ function addItemToCart(title, price, imageSrc) {
               <i class="fas fa-chevron-down" onclick="decreaseQuantity()"></i>
             </div>
             <button class="btn-remove">Remove</button>
-          </div>
           `;
   cartRow.innerHTML = cartRowContents;
   cartItems.append(cartRow);
@@ -110,11 +108,11 @@ function removeCartItem() {
 
 // Increase Value
 function increaseQuantity() {
-  var numberQuantity = document.getElementsByClassName("cart-quantity");
+  let numberQuantity = document.getElementsByClassName("cart-quantity");
   for (let i = 0; i < numberQuantity.length; i++) {
-    let numberQ = numberQuantity[i];
-    let value = parseInt(numberQ.innerText);
-    numberQ.innerText = value + 1;
+    let numberRow = numberQuantity[i];
+    let value = parseInt(numberRow.innerText);
+    numberRow.innerText = value + 1;
     updateCartTotal();
   }
 }
@@ -123,12 +121,12 @@ function increaseQuantity() {
 function decreaseQuantity() {
   var numberQuantity = document.getElementsByClassName("cart-quantity");
   for (let i = 0; i < numberQuantity.length; i++) {
-    let numberQ = numberQuantity[i];
-    let value = parseInt(numberQ.innerText);
-    numberQ.innerText = value - 1;
+    let numberRow = numberQuantity[i];
+    let value = parseInt(numberRow.innerText);
+    numberRow.innerText = value - 1;
     // Prevent negative amount
-    if (numberQ.innerText <= 0) {
-      numberQ.innerText = 1;
+    if (numberRow.innerText <= 0) {
+      numberRow.innerText = 1;
     }
     updateCartTotal();
   }
@@ -153,10 +151,14 @@ function updateCartTotal() {
 // Confirm purchase button
 function confirmPurchase() {
   alert("Thank you for your purchase!");
-  const cartItems = document.getElementsByClassName("cart-item")[0];
   const itemRow = document.getElementsByClassName("item-row");
 
-  console.log(itemRow.parentNode);
+  // const cartItems = document.getElementsByClassName("cart-item")[0];
+  // while (cartItems.hasChildNodes()) {
+  //   cartItems.removeChild(cartItems.firstChild);
+  // }
+
+  // console.log(itemRow.parentNode);
   // console.log(cartItems.parentElement.childNodes === "cart-item");
   // console.log(cartItems.parentElement.childNodes.length);
 
